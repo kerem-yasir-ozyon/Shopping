@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shopping.DTO", "NTier\Shopp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shopping.ViewModel", "NTier\Shopping.ViewModel\Shopping.ViewModel.csproj", "{595DB2A1-403C-4654-9253-9BA16D77169E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shopping.Common", "Shopping.Common\Shopping.Common.csproj", "{5C043E8B-28C2-4F7C-9BB5-1AE2AFF3277D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{595DB2A1-403C-4654-9253-9BA16D77169E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{595DB2A1-403C-4654-9253-9BA16D77169E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{595DB2A1-403C-4654-9253-9BA16D77169E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C043E8B-28C2-4F7C-9BB5-1AE2AFF3277D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C043E8B-28C2-4F7C-9BB5-1AE2AFF3277D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C043E8B-28C2-4F7C-9BB5-1AE2AFF3277D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C043E8B-28C2-4F7C-9BB5-1AE2AFF3277D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +69,7 @@ Global
 		{5FA67444-E278-4997-B59B-9F122D801C71} = {80488A5D-D440-4261-B195-1AAB7CC52CB5}
 		{11C89A6B-199C-4A22-9FC1-D24CA66E4729} = {80488A5D-D440-4261-B195-1AAB7CC52CB5}
 		{595DB2A1-403C-4654-9253-9BA16D77169E} = {80488A5D-D440-4261-B195-1AAB7CC52CB5}
+		{5C043E8B-28C2-4F7C-9BB5-1AE2AFF3277D} = {80488A5D-D440-4261-B195-1AAB7CC52CB5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CB1E8262-C8C2-4F82-ADEA-31F05D5D179C}
