@@ -16,4 +16,9 @@
     <ProjectReference Include="..\Shopping.ViewModel\Shopping.ViewModel.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Managers\Abstract\" />
+    <Folder Include="Managers\Concrete\" />
+  </ItemGroup>
+
 </Project>
