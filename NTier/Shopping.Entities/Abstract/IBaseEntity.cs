@@ -10,6 +10,6 @@ namespace Shopping.Entities.Abstract
     {
         public int Id { get; set; }
         DateTime Created {  get; set; }
-        DateTime Updated { get; set; }
+        DateTime? Updated { get; set; }
     }
 }
