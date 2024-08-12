@@ -71,20 +71,38 @@ namespace ShoppingAdmin.Controllers
         // GET: CategoryController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            CategoryViewModel model = _categoryManager.Get(id);
+
+            return View(model);
         }
 
         // POST: CategoryController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(CategoryViewModel model)
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                if (!ModelState.IsValid)
+                {
+                    return View(model);
+                }
+
+                model.AppUserId = 1;
+
+                if (_categoryManager.Update(model) > 0)
+                    return RedirectToAction(nameof(Index));
+                else
+                {
+                    ModelState.AddModelError("DbError", "Veri tabanı ekleme hatası");
+
+                    return View(model);
+                }
             }
-            catch
+            catch (Exception ex)
             {
+                ModelState.AddModelError("GeneralException", ex.Message);
+                ModelState.AddModelError("GeneralInnerException", ex.InnerException?.Message);
                 return View();
             }
         }
@@ -92,6 +110,8 @@ namespace ShoppingAdmin.Controllers
         // GET: CategoryController/Delete/5
         public ActionResult Delete(int id)
         {
+            _categoryManager.Delete(id);
+
             return View();
         }
 
